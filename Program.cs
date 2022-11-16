@@ -6,6 +6,10 @@ var app = builder.Build();
 
 
 Circulo c1 = new Circulo();
+c1.setRaio(10);
+
+
+
 Circulo c2 = new Circulo(10);
 
 
@@ -29,7 +33,6 @@ class Circulo
 
     public Circulo()
     {
-        this.raio = 5;
     }
 
 
@@ -71,7 +74,10 @@ class Circulo
 
 
 
-
+    public void setRaio(double raio)
+    {
+        this.raio = raio;
+    }
 }
 
 
